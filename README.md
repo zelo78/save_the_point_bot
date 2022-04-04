@@ -26,3 +26,20 @@
 3. Авторизация пользователя по telegram-id (при запросах от сервера Телеграм)
 4. Использование канала через ngrok для https-сервера для получения данных от Телеграм
 5. Использование middleware для добавления пользователя в request при запросе от Телеграм
+
+## Запуск приложения
+
+- Установка и обновление требуемых библиотек 
+```
+pip install -Ur requirements.txt 
+```
+
+## Использованные библиотеки
+
+- [Django](https://www.djangoproject.com/) v. 4.0.3
+- [Django REST framework](https://www.django-rest-framework.org/) v 3.13.1
+- [python-dotenv](https://pypi.org/project/python-dotenv/) v. 0.20.0 - Считывает пары ключ-значение из файла .env и может устанавливать их в качестве переменных среды
+- [django-constance](https://django-constance.readthedocs.io/en/latest/) v 2.8.0 - Dynamic Django settings
+- [requests](https://docs.python-requests.org/en/latest/) v 2.27.1 - elegant and simple HTTP library
+- [pyngrok](https://pyngrok.readthedocs.io/en/latest/) v 5.1.0 - wrapper for ngrok
+- [gunicorn](https://docs.gunicorn.org/en/stable/) v 20.1.0 - Gunicorn ‘Green Unicorn’ is a Python WSGI HTTP Server for UNIX

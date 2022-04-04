@@ -1,9 +1,10 @@
 requests
-django~=3.2
+django
 python-dotenv
 gunicorn
 pyngrok
 djangorestframework
 django-constance[database]
+black
 
 # pyTelegramBotAPI==4.2.0
