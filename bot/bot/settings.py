@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    'rest_framework',
+    'constance',
+    'constance.backends.database',
 ]
 
 MIDDLEWARE = [
@@ -126,3 +129,10 @@ STATIC_URL = "/static/"
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# constance settings
+CONSTANCE_BACKEND = 'constance.backends.database.DatabaseBackend'
+CONSTANCE_SUPERUSER_ONLY = True
+CONSTANCE_CONFIG = {
+    'TELEGRAM_TOKEN': ("", "Токен для доступа к телеграм-боту (его должен дать Bot Father, @BotFather)", str),
+}
