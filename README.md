@@ -1,4 +1,4 @@
-# Telegram-бот с использованием Django и DRF
+# Save the point: Telegram-бот с использованием Django и DRF
 
 ## Основные функции
 
@@ -18,6 +18,11 @@
     - отправки в другие мессенджеры
     - отправки в навигатор
     - отображения на карте (Google, Yandex maps; все точки / точки за период / конкретная точка)
+9. У бота есть web-интерфейс:
+   - авторизация на личной странице - по одноразовому коду, который приходит в боте;
+   - на странице можно увидеть все свои сохраненные точки
+   - управление точками: редактирование, удаление, отправка
+   - визуализация списком и на карте
 
 ## Технические решения
 
@@ -38,7 +43,7 @@ pip install -Ur requirements.txt
 
 - [Django](https://www.djangoproject.com/) v. 4.0.3
 - [Django REST framework](https://www.django-rest-framework.org/) v 3.13.1
-- [python-dotenv](https://pypi.org/project/python-dotenv/) v. 0.20.0 - Считывает пары ключ-значение из файла .env и может устанавливать их в качестве переменных среды
+- [python-dotenv](https://pypi.org/project/python-dotenv/) v. 0.20.0 - reads key-value pairs from a .env file and can set them as environment variables
 - [django-constance](https://django-constance.readthedocs.io/en/latest/) v 2.8.0 - Dynamic Django settings
 - [requests](https://docs.python-requests.org/en/latest/) v 2.27.1 - elegant and simple HTTP library
 - [pyngrok](https://pyngrok.readthedocs.io/en/latest/) v 5.1.0 - wrapper for ngrok
